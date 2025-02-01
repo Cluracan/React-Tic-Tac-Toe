@@ -17,6 +17,7 @@ export default function Game() {
     ) : (
       <p>{`Move ${currentMove}`}</p>
     );
+
   function handleMove(nextGameCells) {
     const nextHistory = [
       ...gameHistory.slice(0, currentMove + 1),
