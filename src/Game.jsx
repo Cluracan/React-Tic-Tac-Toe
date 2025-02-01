@@ -52,15 +52,15 @@ export default function Game() {
         <div className="game-info">
           Game Info
           {gameInfo}
+          <div>
+            <button className="move-button" onClick={handleRewind}>
+              &lt;
+            </button>
+            <button className="move-button" onClick={handleForward}>
+              &gt;
+            </button>
+          </div>
         </div>
-      </div>
-      <div className="move-button holder">
-        <button className="move-button" onClick={handleRewind}>
-          &lt;
-        </button>
-        <button className="move-button" onClick={handleForward}>
-          &gt;
-        </button>
       </div>
     </>
   );
